@@ -4,20 +4,16 @@ import fdb
 
 class Sender():
     def __init__(self):
-        self.token = 'faf66a0b-9ff1-4b55-ad2f-ab46381cb9be'
-        self.url = 'https://api-base.whatstalk.com.br/api/messages/'
-        self.sender_phone = '556784540339'
-        self.send_to_cv = self.config()['send_to']
-        self.messages_to_send = self.get_messages_to_send()
+        self.config = self.get_config()
 
     def connDb(self):
         conn = fdb.connect(
-            host='127.0.0.1',
-            database='C:/Ultra/Banco/Gestao - Energia Solar.fdb',
-            user='SYSDBA',
-            password='masterkey',
-            port=3050,
-            charset='UNICODE_FSS'
+            host=self.config['database']['host'],
+            database=self.config['database']['database'],
+            user=self.config['database']['user'],
+            password=self.config['database']['password'],
+            port=int(self.config['database']['port']),
+            charset=self.config['database']['charset']
         )
         return conn
 
@@ -52,7 +48,7 @@ class Sender():
         conn.commit()
         conn.close()
 
-    def config(self):
+    def get_config(self):
         conf = json.loads(open('config.json', 'r').read())
         return conf
 
@@ -149,9 +145,8 @@ class Sender():
             return data
 
     def send_message(self):
-        for mes in self.messages_to_send:
+        for mes in self.get_messages_to_send():
             progress = self.perc_project(dime=mes["DIME_ID"])[0]
-            print(progress)
             message = f"""*STATUS PROJETOS - DELTA SISTEMAS* ```
 Dimen.:   {mes['DIME_ID']}
 Proj.:    {mes['PROJETO_ID']}
@@ -160,15 +155,14 @@ Tarefa:   {mes['TAREFA']}
 
 Progresso do Projeto:``` *{round(progress['CONCLUIDO']/progress['TOTAL']*100, 2)}%*
 """      
-            # print(message, self.sender_phone)
-            req = r.post(url=self.url,
+            req = r.post(url=self.config['url'],
                 headers={
                     "Content-Type": "application/json", 
                     "Accept": "application/json", 
-                    "Authorization": f"Bearer {self.token}"
+                    "Authorization": f"Bearer {self.config['token']}"
                 },
                 json={
-                    "sender_phone": f"{self.sender_phone}",
+                    "sender_phone": f"{self.config['sender_phone']}",
                     "phone": f"{mes['VENDEDOR_NUM']}",
                     "type": "TEXT", 
                     "text_content": str(message)
@@ -183,7 +177,6 @@ Progresso do Projeto:``` *{round(progress['CONCLUIDO']/progress['TOTAL']*100, 2)
             # ''')
             # conn.commit()
             # conn.close()
-            # print('ok')
 
 if __name__ == '__main__':
     import time
