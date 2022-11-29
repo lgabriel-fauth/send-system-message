@@ -1,6 +1,7 @@
 import requests as r
 import json
 import fdb
+import time
 
 class Sender():
     def __init__(self):
@@ -168,19 +169,17 @@ Progresso do Projeto:``` *{round(progress['CONCLUIDO']/progress['TOTAL']*100, 2)
                     "text_content": str(message)
                 })
 
-            # conn = self.connDb()
-            # cur = conn.cursor()
-            # cur.execute(f'''
-            #     UPDATE PROJETOS_TAREFAS_APONTAMENTOS SET
-            #     ENVIADO = true
-            #     WHERE ID = {mes['APONTAMENTO_ID']}
-            # ''')
-            # conn.commit()
-            # conn.close()
+            conn = self.connDb()
+            cur = conn.cursor()
+            cur.execute(f'''
+                UPDATE PROJETOS_TAREFAS_APONTAMENTOS SET
+                ENVIADO = true
+                WHERE ID = {mes['APONTAMENTO_ID']}
+            ''')
+            conn.commit()
+            conn.close()
 
-if __name__ == '__main__':
-    import time
-    # Sender().send_message()
-    while True:
-        Sender().send_message()
-        time.sleep(10)
+# Sender().send_message()
+while True:
+    Sender().send_message()
+    time.sleep(10)

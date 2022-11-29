@@ -1,16 +1,16 @@
 (['C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API WhatsTalk\\sender.py'],
  ['C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API WhatsTalk'],
  ['codecs'],
- ['C:\\Users\\Delta '
-  'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks',
-  'C:\\Users\\Delta '
-  'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks\\__pycache__',
-  'C:\\Users\\Delta '
-  'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks',
-  'C:\\Users\\Delta '
-  'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks\\__pycache__',
-  'C:\\Users\\Delta '
-  'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks'],
+ ['C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+  'WhatsTalk\\venv\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks',
+  'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+  'WhatsTalk\\venv\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks\\__pycache__',
+  'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+  'WhatsTalk\\venv\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks',
+  'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+  'WhatsTalk\\venv\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks\\__pycache__',
+  'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+  'WhatsTalk\\venv\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks'],
  {},
  [],
  [],
@@ -20,18 +20,42 @@
  {},
  '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit '
  '(AMD64)]',
- [('pyi_rth_subprocess',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_subprocess.py',
+ [('pyi_rth_inspect',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
-  ('pyi_rth_inspect',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+  ('pyi_rth_subprocess',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_subprocess.py',
    'PYSOURCE'),
   ('sender',
    'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API WhatsTalk\\sender.py',
    'PYSOURCE')],
- [('inspect',
+ [('subprocess',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\selectors.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\threading.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\signal.py',
+   'PYMODULE'),
+  ('inspect',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\inspect.py',
    'PYMODULE'),
@@ -50,10 +74,6 @@
   ('typing',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\typing.py',
-   'PYMODULE'),
-  ('contextlib',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\contextlib.py',
    'PYMODULE'),
   ('tempfile',
    'C:\\Users\\Delta '
@@ -118,14 +138,6 @@
   ('struct',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\struct.py',
-   'PYMODULE'),
-  ('threading',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\threading.py',
-   'PYMODULE'),
-  ('_threading_local',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_threading_local.py',
    'PYMODULE'),
   ('string',
    'C:\\Users\\Delta '
@@ -307,10 +319,6 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py',
    'PYMODULE'),
-  ('selectors',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\selectors.py',
-   'PYMODULE'),
   ('quopri',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\quopri.py',
@@ -371,26 +379,6 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py',
    'PYMODULE'),
-  ('subprocess',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\subprocess.py',
-   'PYMODULE'),
-  ('signal',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\signal.py',
-   'PYMODULE'),
-  ('tracemalloc',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
-   'PYMODULE'),
-  ('stringprep',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
-   'PYMODULE'),
   ('getpass',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\getpass.py',
@@ -431,29 +419,41 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\client.py',
    'PYMODULE'),
-  ('fdb',
+  ('tracemalloc',
    'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\__init__.py',
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('fdb',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\__init__.py',
    'PYMODULE'),
   ('fdb.gstat',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\gstat.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\gstat.py',
    'PYMODULE'),
   ('fdb.utils',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\utils.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\utils.py',
    'PYMODULE'),
   ('fdb.trace',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\trace.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\trace.py',
    'PYMODULE'),
   ('fdb.blr',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\blr.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\blr.py',
    'PYMODULE'),
   ('fdb.services',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\services.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\services.py',
    'PYMODULE'),
   ('ctypes',
    'C:\\Users\\Delta '
@@ -464,20 +464,20 @@
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\_endian.py',
    'PYMODULE'),
   ('fdb.fbcore',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\fbcore.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\fbcore.py',
    'PYMODULE'),
   ('fdb.monitor',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\monitor.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\monitor.py',
    'PYMODULE'),
   ('fdb.schema',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\schema.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\schema.py',
    'PYMODULE'),
   ('fdb.ibase',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\fdb\\ibase.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\fdb\\ibase.py',
    'PYMODULE'),
   ('queue',
    'C:\\Users\\Delta '
@@ -528,292 +528,292 @@
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\json\\scanner.py',
    'PYMODULE'),
   ('requests',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\__init__.py',
    'PYMODULE'),
   ('requests.status_codes',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\status_codes.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\status_codes.py',
    'PYMODULE'),
   ('requests.structures',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\structures.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\structures.py',
    'PYMODULE'),
   ('requests.compat',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\compat.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\compat.py',
    'PYMODULE'),
   ('http.cookies',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\cookies.py',
    'PYMODULE'),
   ('requests.models',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\models.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\models.py',
    'PYMODULE'),
   ('idna',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\idna\\__init__.py',
    'PYMODULE'),
   ('idna.intranges',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\intranges.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\idna\\intranges.py',
    'PYMODULE'),
   ('idna.core',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\core.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\idna\\core.py',
    'PYMODULE'),
   ('idna.uts46data',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\uts46data.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\idna\\uts46data.py',
    'PYMODULE'),
   ('idna.idnadata',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\idnadata.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\idna\\idnadata.py',
    'PYMODULE'),
   ('idna.package_data',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\package_data.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\idna\\package_data.py',
    'PYMODULE'),
   ('requests.hooks',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\hooks.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\hooks.py',
    'PYMODULE'),
   ('requests.cookies',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\cookies.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\cookies.py',
    'PYMODULE'),
   ('requests.auth',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\auth.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\auth.py',
    'PYMODULE'),
   ('requests._internal_utils',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\_internal_utils.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\_internal_utils.py',
    'PYMODULE'),
   ('urllib3.util',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\__init__.py',
    'PYMODULE'),
   ('urllib3.util.wait',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\wait.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\wait.py',
    'PYMODULE'),
   ('urllib3.util.url',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\url.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\url.py',
    'PYMODULE'),
   ('urllib3.packages.six',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\packages\\six.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\packages\\six.py',
    'PYMODULE'),
   ('urllib3.packages',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\packages\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\packages\\__init__.py',
    'PYMODULE'),
   ('urllib3.util.timeout',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\timeout.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\timeout.py',
    'PYMODULE'),
   ('urllib3.util.ssl_',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\ssl_.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\ssl_.py',
    'PYMODULE'),
   ('urllib3.util.ssltransport',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\ssltransport.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\ssltransport.py',
    'PYMODULE'),
   ('hmac',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\hmac.py',
    'PYMODULE'),
   ('urllib3.util.retry',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\retry.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\retry.py',
    'PYMODULE'),
   ('urllib3.util.response',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\response.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\response.py',
    'PYMODULE'),
   ('urllib3.util.request',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\request.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\request.py',
    'PYMODULE'),
   ('urllib3.util.connection',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\connection.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\connection.py',
    'PYMODULE'),
   ('urllib3.contrib._appengine_environ',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\_appengine_environ.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\contrib\\_appengine_environ.py',
    'PYMODULE'),
   ('__future__',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\__future__.py',
    'PYMODULE'),
   ('urllib3.filepost',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\filepost.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\filepost.py',
    'PYMODULE'),
   ('urllib3.fields',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\fields.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\fields.py',
    'PYMODULE'),
   ('requests.api',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\api.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\api.py',
    'PYMODULE'),
   ('requests.sessions',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\sessions.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\sessions.py',
    'PYMODULE'),
   ('requests.adapters',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\adapters.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\adapters.py',
    'PYMODULE'),
   ('urllib3.contrib.socks',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\socks.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\contrib\\socks.py',
    'PYMODULE'),
   ('urllib3.connectionpool',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connectionpool.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\connectionpool.py',
    'PYMODULE'),
   ('urllib3.util.ssl_match_hostname',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
    'PYMODULE'),
   ('ipaddress',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ipaddress.py',
    'PYMODULE'),
   ('urllib3.util.queue',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\queue.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\queue.py',
    'PYMODULE'),
   ('urllib3.util.proxy',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\proxy.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\util\\proxy.py',
    'PYMODULE'),
   ('urllib3.request',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\request.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\request.py',
    'PYMODULE'),
   ('urllib3.connection',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connection.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\connection.py',
    'PYMODULE'),
   ('urllib3._version',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_version.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\_version.py',
    'PYMODULE'),
   ('urllib3._collections',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_collections.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\_collections.py',
    'PYMODULE'),
   ('urllib3.response',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\response.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\response.py',
    'PYMODULE'),
   ('urllib3.poolmanager',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\poolmanager.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\poolmanager.py',
    'PYMODULE'),
   ('requests.__version__',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\__version__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\__version__.py',
    'PYMODULE'),
   ('requests.utils',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\utils.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\utils.py',
    'PYMODULE'),
   ('requests.certs',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\certs.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\certs.py',
    'PYMODULE'),
   ('certifi',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\certifi\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\certifi\\__init__.py',
    'PYMODULE'),
   ('certifi.core',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\certifi\\core.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\certifi\\core.py',
    'PYMODULE'),
   ('importlib.resources',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\resources.py',
    'PYMODULE'),
   ('requests.packages',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\packages.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\packages.py',
    'PYMODULE'),
   ('urllib3.exceptions',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\exceptions.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\exceptions.py',
    'PYMODULE'),
   ('urllib3.contrib.pyopenssl',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
    'PYMODULE'),
   ('urllib3.packages.backports.makefile',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\packages\\backports\\makefile.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\packages\\backports\\makefile.py',
    'PYMODULE'),
   ('urllib3.packages.backports',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\packages\\backports\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\packages\\backports\\__init__.py',
    'PYMODULE'),
   ('urllib3.contrib',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\contrib\\__init__.py',
    'PYMODULE'),
   ('charset_normalizer',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\__init__.py',
    'PYMODULE'),
   ('charset_normalizer.version',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\version.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\version.py',
    'PYMODULE'),
   ('charset_normalizer.utils',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\utils.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\utils.py',
    'PYMODULE'),
   ('charset_normalizer.constant',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\constant.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\constant.py',
    'PYMODULE'),
   ('charset_normalizer.assets',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\assets\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\assets\\__init__.py',
    'PYMODULE'),
   ('charset_normalizer.models',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\models.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\models.py',
    'PYMODULE'),
   ('charset_normalizer.cd',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\cd.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\cd.py',
    'PYMODULE'),
   ('charset_normalizer.md',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\md.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\md.py',
    'PYMODULE'),
   ('charset_normalizer.legacy',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\legacy.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\legacy.py',
    'PYMODULE'),
   ('charset_normalizer.api',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\api.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\charset_normalizer\\api.py',
    'PYMODULE'),
   ('requests.exceptions',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\exceptions.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\requests\\exceptions.py',
    'PYMODULE'),
   ('urllib3',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\__init__.py',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\__init__.py',
    'PYMODULE')],
  [('python310.dll',
    'C:\\Users\\Delta '
@@ -823,6 +823,10 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\VCRUNTIME140.dll',
    'BINARY'),
+  ('select',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\select.pyd',
+   'EXTENSION'),
   ('_decimal',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_decimal.pyd',
@@ -839,21 +843,17 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_bz2.pyd',
    'EXTENSION'),
-  ('select',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\select.pyd',
-   'EXTENSION'),
   ('_socket',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_socket.pyd',
    'EXTENSION'),
-  ('unicodedata',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\unicodedata.pyd',
-   'EXTENSION'),
   ('_ssl',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('unicodedata',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\unicodedata.pyd',
    'EXTENSION'),
   ('_ctypes',
    'C:\\Users\\Delta '
@@ -882,11 +882,11 @@
    'WhatsTalk\\build\\sender\\base_library.zip',
    'DATA'),
   ('certifi\\py.typed',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\certifi\\py.typed',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\certifi\\py.typed',
    'DATA'),
   ('certifi\\cacert.pem',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\certifi\\cacert.pem',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\certifi\\cacert.pem',
    'DATA')],
  [])
