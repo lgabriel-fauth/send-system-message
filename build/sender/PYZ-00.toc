@@ -348,6 +348,10 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py',
    'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
+   'PYMODULE'),
   ('getpass',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\getpass.py',
@@ -391,10 +395,6 @@
   ('tracemalloc',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
    'PYMODULE'),
   ('stringprep',
    'C:\\Users\\Delta '

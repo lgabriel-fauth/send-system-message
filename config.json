@@ -1,11 +1,11 @@
 {
-    "token": "faf66a0b-9ff1-4b55-ad2f-ab46381cb9be",
-    "url": "https://api-base.whatstalk.com.br/api/messages/",
+    "token": "464138fd-8844-4f93-8d77-bc4b72700420",
+    "url": "https://api-base.whatstalk.com.br/api/messages",
     "send_to": "C",
-    "sender_phone": "556784540339",
+    "sender_phone": "556793313208",
     "database": {
         "host": "127.0.0.1",
-        "database": "C:/Ultra/Banco/Gestao - Energia Solar.fdb",
+        "database": "C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API WhatsTalk\\GestaoGeracaoSolar.fdb",
         "user": "SYSDBA",
         "password": "masterkey",
         "port": "3050",

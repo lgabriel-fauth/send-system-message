@@ -59,7 +59,7 @@
  [],
  False,
  False,
- 1669748645,
+ 1669821677,
  [('run.exe',
    'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
    'WhatsTalk\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',

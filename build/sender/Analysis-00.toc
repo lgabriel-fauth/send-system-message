@@ -379,6 +379,10 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py',
    'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
+   'PYMODULE'),
   ('getpass',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\getpass.py',
@@ -422,10 +426,6 @@
   ('tracemalloc',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
    'PYMODULE'),
   ('stringprep',
    'C:\\Users\\Delta '
@@ -815,13 +815,13 @@
    'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
    'WhatsTalk\\venv\\lib\\site-packages\\urllib3\\__init__.py',
    'PYMODULE')],
- [('python310.dll',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\python310.dll',
-   'BINARY'),
-  ('VCRUNTIME140.dll',
+ [('VCRUNTIME140.dll',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('python310.dll',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\python310.dll',
    'BINARY'),
   ('select',
    'C:\\Users\\Delta '
@@ -847,13 +847,13 @@
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_socket.pyd',
    'EXTENSION'),
-  ('_ssl',
-   'C:\\Users\\Delta '
-   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_ssl.pyd',
-   'EXTENSION'),
   ('unicodedata',
    'C:\\Users\\Delta '
    'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_ssl',
+   'C:\\Users\\Delta '
+   'Sistemas\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_ssl.pyd',
    'EXTENSION'),
   ('_ctypes',
    'C:\\Users\\Delta '
@@ -881,12 +881,12 @@
    'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
    'WhatsTalk\\build\\sender\\base_library.zip',
    'DATA'),
-  ('certifi\\py.typed',
-   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
-   'WhatsTalk\\venv\\lib\\site-packages\\certifi\\py.typed',
-   'DATA'),
   ('certifi\\cacert.pem',
    'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
    'WhatsTalk\\venv\\lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('certifi\\py.typed',
+   'C:\\Users\\Delta Sistemas\\Desktop\\Cobra\\API '
+   'WhatsTalk\\venv\\lib\\site-packages\\certifi\\py.typed',
    'DATA')],
  [])
