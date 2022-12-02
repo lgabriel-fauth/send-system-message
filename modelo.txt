@@ -1,0 +1,7 @@
+*STATUS PROJETOS - DELTA SISTEMAS* ```
+
+
+Ocorreu uma nova atualização no projeto %DSCPROJETO% do cliente %PARCEIRO%. 
+
+A tarefa de %TAREFA% do projeto foi concluída pelo colaborador %RESPONSAVEL%  no dia %DATA_FINAL% as %HORA_FINAL%, a próxima etapa será a %PROX_TAREFA% que será feita pelo colaborador: %PROX_TAREFA_RESP% com previsão %PROX_TAREFA_PREV%.
+```
