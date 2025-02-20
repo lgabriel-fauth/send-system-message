@@ -1,11 +1,20 @@
 # Configurações para rodar
-
 ## Configurações importantes
 - Instalar Firebird (x64)
-- token
-- numero conforme exemplo > 556799991111 < 
-- caminho para o banco de conter apenas > / <   Caso haja > \ < dará erro
-- configurar na tabela PROJETOS_TAREFAS_APONTAMENTOS os campos ENVIAR e ENVIADO como BOOLEAN
-- rodar a TRIGGER
+- A pasta com os dados da aplicação de envio podem se localizar em qualquer pasta do computador
+### em MAIN_SQL.SQL
+- AUX_INFO: informação legado e deve existir com um dado qualquer nas colunas
+- SEND_TO_NUM: coluna informando o número do contato que irá receber a mensagem
+- SEND_TO_NUM deve seguir a formatação conforme exemplo: 556799991111
+### em CONFIG.JSON
+- DELIMITER: idenfica a separação usada no MODELO.TXT para inclusão das várias do SQL
+- HOUR_TO_SEND e MIN_TO_SEND identificam o horário do dia de envio
+- TOKEN: representa o token gerando na plataforma em Configureções>Funcionalidades>Token
+- URL: endpoint que irá receber as requisições
+- SEND_TO: informação legado sem utilizado, deve ser mantiva como "V"
+- SENDER_PHONE: número da integração que vai disparar as mensagens
+
+- DATABASE: dados para acesso ao banco de dados
+- Caminho para o banco de dados deve conter apenas "/" ou "\\". Caso informe "\" irá gerar erro
 
 ## Após realizado o processo deve funcionar devidamente
