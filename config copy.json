@@ -1,0 +1,17 @@
+{
+    "delimiter": "%",
+    "hour_to_send": "15",
+    "min_to_send": "01",
+    "token": "5c0278b9-3b72-48e7-9d00-1872787cc59b",
+    "url": "https://luna.cubo.chat/api/messages",
+    "send_to": "V",
+    "sender_phone": "556730329789",
+    "database": {
+        "host": "127.0.0.1",
+        "database": "C:\\Ultra\\Banco\\MarcasFamosas\\Gestao.fdb",
+        "user": "SYSDBA",
+        "password": "masterkey",
+        "port": "3050",
+        "charset": "UNICODE_FSS"
+    }
+}

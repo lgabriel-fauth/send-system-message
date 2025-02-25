@@ -1,12 +1,13 @@
 {
     "delimiter": "%",
-    "token": "464138fd-8844-4f93-8d77-bc4b72700420",
-    "url": "https://api-base.whatstalk.com.br/api/messages",
-    "send_to": "C",
-    "sender_phone": "556793313208",
+    "hour_to_send": "15",
+    "min_to_send": "37",
+    "token": "2a379419-9235-4f62-bd95-22689f1efacd",
+    "url": "https://luna.cubo.chat/api/messages",
+    "sender_phone": "556730329789",
     "database": {
         "host": "127.0.0.1",
-        "database": "C:\\Ultra\\Banco\\Gestao - Energia Solar.fdb",
+        "database": "C:\\Ultra\\Banco\\MarcasFamosas\\Gestao.fdb",
         "user": "SYSDBA",
         "password": "masterkey",
         "port": "3050",

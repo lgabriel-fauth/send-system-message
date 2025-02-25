@@ -2,7 +2,6 @@ import requests as r
 import json
 import fdb
 import time
-from datetime import datetime
 
 class Sender():
     def __init__(self):
@@ -23,44 +22,6 @@ class Sender():
             input('Erro ao conectar no banco de dados, Verifique os dados.')
         return conn
 
-    def set_trigger(self):
-        sql = '''
-            SET TERM ^ ;
-            CREATE OR ALTER TRIGGER update_to_send_mesg FOR projetos_tarefas_apontamentos
-            ACTIVE
-            BEFORE UPDATE or INSERT
-            POSITION 0
-            AS
-
-            BEGIN
-                if (new.idn_reaberta = false and new.idn_concluido = true) then
-                    new.enviar = true;
-            END^
-            SET TERM ; ^
-        '''
-        conn = self.connDb()
-        try:
-            conn.execute_immediate(sql)
-            conn.commit()
-        except:
-            input('Atualizou as tabelas?\nAplicativo será fechado!')
-        finally:
-            conn.close()
-
-    def set_field(self):
-        sql = '''
-            ALTER TABLE PROJETOS_TAREFAS_APONTAMENTOS
-            ADD ENVIAR BOOLEAN
-            ADD ENVIADO BOOLEAN
-        '''
-        conn = self.connDb()
-        try:
-            cur = conn.cursor()
-            cur.execute(sql)
-            conn.commit()
-        finally:
-            conn.close()
-
     def get_config(self):
         try:
             conf = json.loads(open('config.json', 'r').read())
@@ -70,9 +31,9 @@ class Sender():
 
     def get_messages_to_send(self):
         try:
-            sql = open('proj_to_send.sql', 'r').read()
+            sql = open('query.sql', 'r').read()
         except:
-            input('Erro ao localizar proj_to_send.sql\nAplicativo será fechado!')
+            input('Erro ao localizar query.sql\nAplicativo será fechado!')
         conn = self.connDb()
         try:
             cur = conn.cursor()
@@ -97,13 +58,23 @@ class Sender():
                     message += str(msg[m])
                 else:
                     message += m
-            messages.append({ 'text': message, 'send_to_num': msg['SEND_TO_NUM'], 'apontamento': msg['APONTAMENTO_ID']})
+            messages.append({ 'text': message, 'send_to_num': msg['SEND_TO_NUM'] })
         return messages
+    
+    def verify_to_send_message(self):
+        horario_atual = time.strftime('%H:%M:%S').split(':')
+        if (
+            self.config['hour_to_send'] == horario_atual[0] and
+            self.config['min_to_send'] == horario_atual[1]
+        ):
+            return True
+        return False
 
     def send_message(self):
+        if not self.verify_to_send_message():
+            return
+
         for msg in self.set_messages():
-            print(msg)
-            
             req = r.post(url=self.config['url'],
                 headers={
                     "Content-Type": "application/json", 
@@ -115,23 +86,38 @@ class Sender():
                     "phone": f"{msg['send_to_num']}",
                     "type": "TEXT", 
                     "text_content": str(msg['text'])
-                })
-            print(req.status_code, req.content)
+                }
+            )
+        time.sleep(60)
 
-            if req.status_code == 201 or req.status_code == 200:
-                conn = self.connDb()
-                cur = conn.cursor()
-                cur.execute(f'''
-                    UPDATE PROJETOS_TAREFAS_APONTAMENTOS SET
-                    ENVIADO = true
-                    WHERE ID = {msg['apontamento']}
-                ''')
-                conn.commit()
-                conn.close()
+###### INTERFACE ######
+import tkinter as tk
+from time import strftime
 
-# Sender().send_message()
-if __name__ == '__main__':
-    while True:
-        Sender().send_message()
-        # Sender().set_messages()
-        time.sleep(10)
+# Função para atualizar o horário
+def atualizar_horario():
+    horario_atual = strftime('%H:%M:%S')  # Formato de 24 horas
+    label_relogio.config(text=horario_atual)
+    Sender().send_message()
+    label_relogio.after(1000, atualizar_horario)  # Atualiza a cada 1 segundo
+
+# Configuração da janela principal
+janela = tk.Tk()
+janela.title("Automação mensagens")
+janela.geometry("300x100")  # Tamanho da janela
+janela.resizable(False, False)  # Impede o redimensionamento da janela
+
+# Configuração do rótulo (label) para exibir o horário
+label_relogio = tk.Label(
+    janela,
+    font=('Arial', 40, 'bold'),  # Fonte e tamanho
+    background='black',  # Cor de fundo
+    foreground='white'   # Cor do texto
+)
+label_relogio.pack(expand=True, fill='both')  # Centraliza o rótulo na janela
+
+# Inicia a atualização do horário
+atualizar_horario()
+
+# Inicia o loop principal da interface
+janela.mainloop()
