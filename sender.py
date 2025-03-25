@@ -18,22 +18,38 @@ class Sender():
                 port=int(self.config['database']['port']),
                 charset=self.config['database']['charset']
             )
-        except:
-            input('Erro ao conectar no banco de dados, Verifique os dados.')
+        except Exception as e:
+            self.add_new_log(f'Erro ao conectar no banco de dados, Verifique os dados. \n {e}')
         return conn
 
     def get_config(self):
         try:
-            conf = json.loads(open('config.json', 'r').read())
+            with open('config.json', 'r') as f:
+                conf = json.loads(f.read())
             return conf
-        except:
-            input('Erro ao localizar CONFIG.JSON\nAplicativo será fechado!\ncod 000')
+        except Exception as e:
+            self.add_new_log(f'Erro ao localizar CONFIG.JSON \n {e}')
+            
+
+    def add_new_log(self, log):
+        try:
+            with open('logs.json', 'r') as f:
+                logs: dict = json.loads(f.read())
+        except FileNotFoundError as e:
+            logs = {}
+        
+        key = time.strftime('%H:%M:%S')
+        logs[key] = log
+
+        with open('logs.json', 'w') as f:
+            json.dump(logs, f, indent=2)
 
     def get_messages_to_send(self):
         try:
-            sql = open('query.sql', 'r').read()
+            with open('query.sql', 'r') as f:
+                sql = f.read()
         except:
-            input('Erro ao localizar query.sql\nAplicativo será fechado!')
+            self.add_new_log(f'Erro ao localizar QUERY.SQL \n {e}')
         conn = self.connDb()
         try:
             cur = conn.cursor()
@@ -41,8 +57,8 @@ class Sender():
             data = []
             for c in cur.fetchallmap():
                 data.append(dict(c))
-        except:
-            input('Atualizou as tabelas?\nAplicativo será fechado!\ncod 001')
+        except Exception as e:
+            self.add_new_log(f'Erro ao executar SQL \n {e}')
         finally:
             conn.close()
             return data
@@ -54,7 +70,6 @@ class Sender():
             message = ''
             for id, m in enumerate(modelo):
                 if id%2 == 1:
-                    print(m)
                     message += str(msg[m])
                 else:
                     message += m
@@ -74,7 +89,22 @@ class Sender():
         if not self.verify_to_send_message():
             return
 
+        self.add_new_log("Antes do set_messages")
         for msg in self.set_messages():
+            self.add_new_log(json.dumps({
+                    "Content-Type": "application/json", 
+                    "Accept": "application/json", 
+                    "Authorization": f"Bearer {self.config['token']}"
+                }))
+            self.add_new_log(json.dumps([
+                    {
+                        "sender_phone": f"{self.config['sender_phone']}",
+                        "phone": f"{msg['send_to_num']}",
+                        "type": "TEXT", 
+                        "text_content": str(msg['text'])
+                    }
+                ]))
+            
             req = r.post(url=self.config['url'],
                 headers={
                     "Content-Type": "application/json", 
@@ -88,6 +118,10 @@ class Sender():
                     "text_content": str(msg['text'])
                 }
             )
+            if (req.status_code == 201):
+                self.add_new_log(f'Message sent to {msg['send_to_num']}')
+            else:
+                self.add_new_log(req.json()['message'])
         time.sleep(60)
 
 ###### INTERFACE ######

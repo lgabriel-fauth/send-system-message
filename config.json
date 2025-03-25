@@ -1,8 +1,8 @@
 {
     "delimiter": "%",
-    "hour_to_send": "15",
-    "min_to_send": "37",
-    "token": "2a379419-9235-4f62-bd95-22689f1efacd",
+    "hour_to_send": "14",
+    "min_to_send": "39",
+    "token": "71d96ce1-5fab-40a8-b02f-636ad37f82ba",
     "url": "https://luna.cubo.chat/api/messages",
     "sender_phone": "556730329789",
     "database": {

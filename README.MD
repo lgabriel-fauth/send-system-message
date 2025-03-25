@@ -14,5 +14,8 @@
 
 - DATABASE: dados para acesso ao banco de dados
 - Caminho para o banco de dados deve conter apenas "/" ou "\\". Caso informe "\" irá gerar erro
+### MODELO.TXT
+- Caso o envio das mensagens gere caracteres diferente do informado na mensagem. Realizar conversão do arquivo
+  no NOTEPAD++ para outro formato de texto, exemplo utf-8 -> ascii
 
 ## Após realizado o processo deve funcionar devidamente
