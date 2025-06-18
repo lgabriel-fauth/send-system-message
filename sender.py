@@ -65,16 +65,19 @@ class Sender():
     
     def set_messages(self):
         messages = []
-        for msg in self.get_messages_to_send():
-            modelo = open('modelo.txt', 'r').read().split(self.delimiter)
-            message = ''
-            for id, m in enumerate(modelo):
-                if id%2 == 1:
-                    message += str(msg[m])
-                else:
-                    message += m
-            messages.append({ 'text': message, 'send_to_num': msg['SEND_TO_NUM'] })
-        return messages
+        try:
+            for msg in self.get_messages_to_send():
+                modelo = open('modelo.txt', 'r').read().split(self.delimiter)
+                message = ''
+                for id, m in enumerate(modelo):
+                    if id%2 == 1:
+                        message += str(msg[m])
+                    else:
+                        message += m
+                messages.append({ 'text': message, 'send_to_num': msg['SEND_TO_NUM'] })
+            return messages
+        except Exception as e:
+            self.add_new_log(f'Erro ao converter MODELO.TXT, verifique se os campos correspondem ao SQL: {e}')
     
     def verify_to_send_message(self):
         horario_atual = time.strftime('%H:%M:%S').split(':')
@@ -89,39 +92,27 @@ class Sender():
         if not self.verify_to_send_message():
             return
 
-        self.add_new_log("Antes do set_messages")
-        for msg in self.set_messages():
-            self.add_new_log(json.dumps({
-                    "Content-Type": "application/json", 
-                    "Accept": "application/json", 
-                    "Authorization": f"Bearer {self.config['token']}"
-                }))
-            self.add_new_log(json.dumps([
-                    {
+        for msg in self.set_messages():  
+            try:     
+                req = r.post(url=self.config['url'],
+                    headers={
+                        "Content-Type": "application/json", 
+                        "Accept": "application/json", 
+                        "Authorization": f"Bearer {self.config['token']}"
+                    },
+                    json={
                         "sender_phone": f"{self.config['sender_phone']}",
                         "phone": f"{msg['send_to_num']}",
                         "type": "TEXT", 
                         "text_content": str(msg['text'])
                     }
-                ]))
-            
-            req = r.post(url=self.config['url'],
-                headers={
-                    "Content-Type": "application/json", 
-                    "Accept": "application/json", 
-                    "Authorization": f"Bearer {self.config['token']}"
-                },
-                json={
-                    "sender_phone": f"{self.config['sender_phone']}",
-                    "phone": f"{msg['send_to_num']}",
-                    "type": "TEXT", 
-                    "text_content": str(msg['text'])
-                }
-            )
-            if (req.status_code == 201):
-                self.add_new_log(f'Message sent to {msg['send_to_num']}')
-            else:
-                self.add_new_log(req.json()['message'])
+                )
+                if (req.status_code == 201):
+                    self.add_new_log({ 'message': f"Mensagem enviada para {msg['send_to_num']}" }) 
+                else:
+                    self.add_new_log({ 'message': f"Mensagem não enviada para {msg['send_to_num']}: {req.json()}" })
+            except Exception as e:
+                self.add_new_log(f"Erro no envio para API: {e}")
         time.sleep(60)
 
 ###### INTERFACE ######

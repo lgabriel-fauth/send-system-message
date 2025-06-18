@@ -1,1 +1,6 @@
 Olá %DATA%
+
+Notamos que a última troca de óleo da %OBS% foi em %DATA%, e já se passaram 6 meses.
+Que tal aproveitar para fazer a próxima troca e manter seu veículo sempre em ótimo estado?
+
+A MF Lubrificantes está sempre à disposição para cuidar do seu veículo. Fique á vontade para nos chamar!

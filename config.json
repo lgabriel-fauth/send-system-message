@@ -1,10 +1,10 @@
 {
     "delimiter": "%",
-    "hour_to_send": "14",
-    "min_to_send": "39",
-    "token": "71d96ce1-5fab-40a8-b02f-636ad37f82ba",
-    "url": "https://luna.cubo.chat/api/messages",
-    "sender_phone": "556730329789",
+    "hour_to_send": "16",
+    "min_to_send": "31",
+    "token": "8b3aa3fe-be01-49d1-bc6f-fa737a075056",
+    "url": "https://backup-luna.cubochat.com.br/api/messages",
+    "sender_phone": "556781127929",
     "database": {
         "host": "127.0.0.1",
         "database": "C:\\Ultra\\Banco\\MarcasFamosas\\Gestao.fdb",

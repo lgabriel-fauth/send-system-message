@@ -7,7 +7,7 @@
   },
   {
    "optionDest": "filenames",
-   "value": "C:/Projetos/Pessoal/ZaraGestao/send-system-message/sender.py"
+   "value": "E:/Projetos/CuboV2/send-system-message/sender.py"
   },
   {
    "optionDest": "onefile",
@@ -19,7 +19,7 @@
   },
   {
    "optionDest": "icon_file",
-   "value": "C:/Projetos/Pessoal/ZaraGestao/send-system-message/icon.ico"
+   "value": "E:/Projetos/CuboV2/send-system-message/icon.ico"
   },
   {
    "optionDest": "clean_build",
